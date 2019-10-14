@@ -1,5 +1,5 @@
 ## Dope_Scripts
-To help out the beginners in Getting to know GitHub and to participate in the HacktoberFest. 
+To help out the beginners in Getting to know GitHub and to participate in the HacktoberFest. If the Language folder is not present, Create one as a part of it. After entering your script, add your name and GitHub profile into Contributors.md file.
 
 ## Using git commandline :
 ### Linux :
