@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+
+int main(){
+	int num,n;
+	char a[100000];
+	long sum=0;
+	scanf("%d", &num);         
+	while(num)
+	{
+	    scanf("%s",a);
+	    n=strlen(a);
+	    if(n==1)
+	     printf("%d\n",n);
+	     else
+	     {
+	    while(n)
+	    {
+	      sum+=n;
+	      n--;
+	    }
+	    printf("%ld\n",sum);
+	    sum=0;
+	     }
+	    num--;
+	}
+}
