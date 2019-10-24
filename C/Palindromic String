@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    char str[100];
+    int l,i;
+   gets(str);
+    l=strlen(str);
+    for(i=0;i<l/2;i++)
+    {
+    if(str[i]!=str[l-1-i])
+    {
+    printf("NO");
+    break;
+    }
+    }
+    if(i==l/2)
+    {
+    printf("YES");
+    }
+    return 0;
+}
