@@ -1,0 +1,28 @@
+#include<iostream.h>
+
+int main()
+{
+ int i,j,k[5],m,sum,a,n=1;
+ 
+ while(n<=500)
+ {
+ j=n;
+ sum=0;
+ m=0;
+ while(j!=0)
+ {
+  a=j%10;
+  k[m]=a;
+  k[m]=k[m]*k[m]*k[m];
+  j=j/10;
+  m++;
+  }
+  m=m-1;
+  for(i=m;i>=0;i--)
+  sum+=k[i];
+  if(sum==n)
+  cout<<n<<":- Armstrong no ";
+  n++;
+  }
+  return 0;
+  }
