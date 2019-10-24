@@ -1,0 +1,57 @@
+
+// Sample code to perform I/O:
+#include <stdio.h>
+#include <string.h>
+int numberofsticks(int n)
+{int ns;
+     if(n==1)
+	    ns=2;
+	    else if(n==2||n==3||n==5)
+	    ns=5;
+	    else if(n==0||n==6||n==9)
+	    ns=6;
+	    else if(n==4)
+	    ns=4;
+	    else if(n==7)
+	    ns=3;
+	    else if(n==8)
+	    ns=7;
+	    return ns;
+	    
+}
+int main(){
+	int num;
+	char n[100];
+	scanf("%d", &num);              		
+	for(int i=0;i<num;i++)
+	{
+	   long long  int sum=0;
+	  scanf("%s",n);
+	    int p=strlen(n);
+	  int t=(int)n[0]-48;
+	    if(p==1)
+	    sum=numberofsticks(t);
+	    else{
+	    for(int k=0;k<p;k++)
+	    {
+	         int r=n[k]-48;
+	        int ns=numberofsticks(r);
+	        sum=sum+ns;
+	        
+	    }}
+	    if(sum%2==0)
+	    {
+	        for(int j=0;j<sum/2;j++)
+	        printf("1");
+	    }
+	    else
+	    {
+	        printf("7");
+	        for( int j=0;j<(sum-3)/2;j++)
+	        printf("1");
+	    }
+	    
+	    printf("\n");
+	    }
+	    
+	}
