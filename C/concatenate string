@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+  int main()
+  {
+    char a[50],b[50];
+    int i,j,l;
+    printf("enter first string::");
+    scanf("%s",a);
+    printf("enter second string::");
+    scanf("%s",b);
+    l=strlen(a);
+    i=0;
+    while(b[i]!='\0')
+    {
+      a[l]=b[i];
+      l++;
+      i++;
+    }
+    a[l]='\0';
+    printf("%s",a);
+    return 0;
+  }
