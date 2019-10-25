@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+    long int n,x;
+     long int y;
+    scanf("%ld",&n);
+     scanf("%ld",&x);
+    while(n--)
+    {
+       
+        scanf("%ld",&y);
+        if(y>=x)
+            printf("YES\n");
+        else
+            printf("NO\n");
+    }
+    return 0;
+}
