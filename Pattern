@@ -1,0 +1,37 @@
+#include<stdio.h>
+void pattern(int,int);
+int main()
+{
+    int t,n,k;
+    scanf("%d",&t);
+    while(t--)
+    {
+        scanf("%d",&n);
+        k=n-2;
+        k=k+n;
+        pattern(k,n);
+        printf("\n");
+        
+    }
+}
+void pattern(int k,int n){
+    int i,j,t;
+    
+    for(i=1;i<=n;i++){
+        for(j=1;j<=i;j++)
+        {
+            printf("*");
+            
+        }
+        for(t=1;t<=k;t++){
+            printf("#");
+        }
+        k=k-2;
+         for(j=1;j<=i;j++)
+        {
+            printf("*");
+            
+        }
+    printf("\n");
+    }
+    }
