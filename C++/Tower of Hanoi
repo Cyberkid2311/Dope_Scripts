@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+void towerofhanoi(char from,char via,char to,int disks);
+int main()
+{
+ char A='A',B='B',C='C';
+ int n;
+ cout<<"Enter the no. of disks";
+ cin>>n;
+ cout<<"The process to move all disk from A to C is : ";
+ towerofhanoi(A,B,C,n);
+ return 0;
+}
+void towerofhanoi(char from,char via,char to,int disks)
+{
+ if(disks==0)
+   return;
+ else
+ {
+  towerofhanoi(from,to,via,disks-1);
+  cout<<endl;
+  cout<<"Move "<<disks<<" from "<<from<<" to "<<to<<endl;
+  towerofhanoi(via,from,to,disks-1);
+ }
+}
