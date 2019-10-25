@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int num,a=0,b=7,i;
+	int arr[99999];
+	cin >> num;
+       for(i=1; i<=num; i++)
+       {
+           cin>>arr[i];
+           if((arr[i]-a)>(b-arr[i]))
+           {
+           printf("B\n");
+           b=arr[i];}
+            
+           else{
+           printf("A\n");
+           a=arr[i];}
+       }
+       }
